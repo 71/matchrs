@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    ".",
+    "./derive",
+]
+
+[package]
+name = "matchrs"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Grégoire Geis <opensource@gregoirege.is>",
+]
+license = "ICS"
+description = "Matchers and expectations"
+repository = "https://github.com/71/matchrs"
+readme = "README.md"
+keywords = ["testing", "matchers", "assertions"]
+
+[dependencies]
+matchrs-derive = { path = "./derive" }

@@ -1,0 +1,22 @@
+[package]
+name = "matchrs-derive"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Grégoire Geis <opensource@gregoirege.is>",
+]
+license = "ICS"
+description = "Matchers and expectations"
+repository = "https://github.com/71/matchrs"
+readme = "README.md"
+keywords = ["testing", "matchers", "assertions"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+ident_case = "1.0"
+proc-macro2 = "1.0"
+proc-macro-error = "1.0"
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }
